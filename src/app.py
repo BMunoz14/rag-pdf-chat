@@ -4,7 +4,7 @@ import ollama
 
 st.set_page_config(page_title="RAG para PDF", layout="centered")
 st.title("🔍 Chat con tu documento PDF")
-st.write("Carga un archivo PDF y haz preguntas sobre su contenido.")
+st.write("📄 Carga un archivo PDF y haz preguntas sobre su contenido")
 
 # --- Inicializar historial ---
 if "historial" not in st.session_state:
@@ -21,7 +21,7 @@ if 'model_selection' not in st.session_state:
 
 # --- Sidebar ---
 with st.sidebar:
-    st.title('🧠 Opciones')
+    st.title('🤖 Opciones')
 
     st.session_state.model_selection = st.selectbox(
         'Selecciona el modelo:',
@@ -48,7 +48,7 @@ llm, vector_store = setup_model_and_vectorstore()
 # --- Procesar PDF ---
 if 'pdf_path' in st.session_state:
     process_pdf(st.session_state.pdf_path, vector_store)
-    st.success("✅ PDF cargado exitosamente.")
+    st.success("✅ PDF cargado y procesado exitosamente.")
 
 # --- Mostrar historial completo ---
 for mensaje in st.session_state.historial:
@@ -56,7 +56,7 @@ for mensaje in st.session_state.historial:
         with st.chat_message("user"):
             st.markdown(mensaje["content"])
     elif mensaje["role"] == "assistant":
-        with st.chat_message("ai"):
+        with st.chat_message("ai", avatar="🤖"):
             st.markdown(mensaje["content"])
             with st.expander("📊 Metadatos de la respuesta"):
                 metadata = mensaje.get("metadata", {})
@@ -84,12 +84,12 @@ if user_input := st.chat_input("Haz tu pregunta"):
             "content": user_input
         })
 
-        with st.spinner("Pensando..."):
+        with st.spinner("🤖 Agente RAG Buscando..."):
             result = ask_question(user_input, llm, vector_store)
             respuesta = result.get("answer", "")
             metadata = result.get("metadata", {})
 
-        with st.chat_message("ai"):
+        with st.chat_message("ai", avatar="🤖"):
             st.markdown(respuesta)
             with st.expander("📊 Metadatos de la respuesta"):
                 if metadata:

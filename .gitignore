@@ -8,3 +8,4 @@ __pycache__/
 config.py
 main.py
 requirements.txt
+uv.lock

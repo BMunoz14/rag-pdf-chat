@@ -1,2 +1,2 @@
 stream:
-	uv run streamlit run prueba.py
+	uv run streamlit run src/app.py
