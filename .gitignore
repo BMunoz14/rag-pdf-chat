@@ -1,0 +1,10 @@
+.venv
+.env
+chroma_langchain_db/
+prueba.py
+rag1.py
+langchain_RAG.py
+__pycache__/
+config.py
+main.py
+requirements.txt
