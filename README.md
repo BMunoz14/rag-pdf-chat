@@ -51,3 +51,16 @@ Desarrollado como una base práctica para experimentación con Retrieval-Augment
 
 ![image](https://github.com/user-attachments/assets/71b1616d-b1eb-4c5e-aa9f-45fdba6a95a9)
 ![image](https://github.com/user-attachments/assets/aefcaf43-4d9a-49ca-8bf7-a0c3988edacc)
+
+Tracing del proyecto con langsmith
+
+![image](https://github.com/user-attachments/assets/74f4112d-8e74-4344-9225-1f67e224af0b)
+
+Comparaciones entre cambios del proyecto
+![image](https://github.com/user-attachments/assets/44e416bd-f63f-4cd1-922e-3da824098de0)
+
+![image](https://github.com/user-attachments/assets/03f2674a-ae02-4e1b-858d-ed4393f2d354)
+
+
+
+
