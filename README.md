@@ -46,3 +46,8 @@ La respuesta aparecerá y ouedes hacer múltiples preguntas sobre el mismo PDF.
 
 🙌 Créditos
 Desarrollado como una base práctica para experimentación con Retrieval-Augmented Generation (RAG) local utilizando LangChain, Streamlit y Ollama.
+
+▶ Capturas de prueba usando el documento data/documento.pdf
+
+![image](https://github.com/user-attachments/assets/71b1616d-b1eb-4c5e-aa9f-45fdba6a95a9)
+![image](https://github.com/user-attachments/assets/aefcaf43-4d9a-49ca-8bf7-a0c3988edacc)
